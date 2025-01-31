@@ -1,0 +1,694 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #000;
+    padding-left: 30px;
+    padding-right: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo-img {
+    margin-right: 35px;
+}
+
+.header__logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo-text img {
+    display: block;
+}
+
+.header__search {
+    width: 680px;
+    height: 33px;
+    position: relative;
+}
+
+.header__search svg {
+    width: 20.31px;
+    height: 20.31px;
+    color: #808080;
+    position: absolute;
+    top: 5.84px;
+    left: 14.84px;
+}
+
+.header__search input {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto";
+    font-size: 1.0625rem;
+    font-weight: 300;
+    background-color: #373737;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding-left: 5rem;
+    color: #fff;
+}
+
+.header__search input::placeholder {
+    color: #808080;
+}
+
+.header__account {
+    width: 385px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__account a {
+    text-decoration: none;
+}
+
+.header__account-favorites a,
+.header__account-notifications a,
+.header__account-basket a {
+    height: 100%;
+    color: #E7E2E2;
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+}
+
+.header__account-acc {
+    width: 186px;
+    height: 100%;
+    border-radius: 30px;
+    font-size: 1.875rem;
+    background-color: #fff;
+    color: #000;
+}
+
+.header__account-acc a {
+    height: 100%;
+    color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main__navbar {
+    width: 853px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main__navbar-list {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main__navbar-item::after {
+    content: "|";
+    color: #D1D1D1;
+    margin-left: 20px;
+}
+
+.main__navbar-item:last-child::after {
+    content: "";
+    margin: 0;
+}
+
+.main__navbar-item a {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #000;
+    position: relative;
+}
+
+.main__navbar-item a::before {
+    content: "";
+    position: absolute;
+    transform: scaleX(0);
+    top: 25px;
+    left: 0;
+    height: 2px;
+    background-color: #000;
+}
+
+.main__navbar-item a:hover::before {
+    width: 100%;
+    transition: 0.2s all ease-in;
+    transform: scaleX(1);
+}
+
+.main section {
+    width: 100%;
+}
+
+.main__book {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__book .left-side {
+    width: 42%;
+}
+
+.main__book .right-side {
+    width: 49%;
+}
+
+.main__book-img {
+    display: block;
+    width: 100%;
+}
+
+.main__book-tags {
+    margin-top: 42px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__book-tag {
+    height: 100%;
+    padding: 0 10px;
+    background-color: #4FDFFF;
+    font-family: Tinos;
+    font-size: 0.75rem;
+    font-weight: 400;
+    border-radius: 3px;
+}
+
+.main__book-status {
+    width: 160px;
+    padding: 0 10px;
+    background-color: #FFD600;
+    font-family: Tinos;
+    font-size: 1.5625rem;
+    font-weight: 400;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__book-title {
+    font-family: Tinos;
+    font-size: 3.75rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.main__book-descr {
+    font-family: Tinos;
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.main__book-author {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-family: Tinos;
+    font-size: 1.5625rem;
+    font-weight: 400;
+    color: #42B6F8;
+}
+
+.main__book-btn-favorite {
+    display: block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.main__book-btn-favorite i {
+    font-size: 1.5rem;
+    color: #F9595F;
+}
+
+.main__book-btn-favorite a {
+    font-family: Tinos;
+    font-size: 1.5625rem;
+    font-weight: 400;
+    color: #42B6F8;
+}
+
+.main__book-variations {
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.main__book-variation {
+    width: 170px;
+    background-color: #E6E6E6;
+    border-radius: 15px;
+}
+
+.main__book-variation:hover,
+.main__book-variation:active,
+.main__book-variation:focus {
+    background-color: #B9EAFF;
+    transition: 0.3s all;
+}
+
+.main__book-variations img {
+    margin: 12px auto 0 auto;
+}
+
+.main__book-variations h4 {
+    font-family: Tinos;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #393280;
+    text-align: center;
+    margin: 6px 0;
+}
+
+.main__book-variations p {
+    font-family: Tinos;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #ED553B;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.main__book-btns {
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__book-btns button {
+    width: 170px;
+    height: 37px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #ED553B;
+}
+
+.main__book-btns button:last-child {
+    background-color: #00A3FF;
+}
+
+.main__book-btns a {
+    text-align: center;
+    font-family: Tinos;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    margin-top: 38px;
+}
+
+.main .main__similar {
+    width: 390px;
+    margin-right: 90px;
+}
+
+.main__similar-title {
+    font-family: Tinos;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.main__similar-books {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+}
+
+.main .main__details {
+    width: 390px;
+}
+
+.main__details h2 {
+    font-family: Tinos;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.main__details p {
+    font-family: Tinos;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    margin-top: 6px;
+}
+
+.main__details-aboutbook details {
+    margin-top: 18px;
+    font-family: Tinos;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.main__details-aboutbook summary {
+    font-family: Tinos;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #42B6F8;
+}
+
+.main__details-aboutauthor {
+    margin-top: 37px;
+    margin-bottom: 34px;
+}
+
+.main__details-aboutauthor img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.main__details .main__details-aboutauthor p {
+    font-weight: 400;
+}
+
+.main__details-quotes h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.main__details-quotes h3 {
+    margin: 0;
+    margin-bottom: 18px;
+    font-family: Tinos;
+    font-size: 0.9375rem;
+}
+
+.main__reviews {
+    min-height: 180px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.main__reviews-top {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__reviews-top h2 {
+    font-family: Tinos;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.main__reviews-count {
+    color: #CACACA;
+}
+
+.main__reviews-right {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #42B6F8;
+    cursor: pointer;
+}
+
+.main__reviews-right .plus {
+    width: 17px;
+    height: 17px;
+    position: relative;
+}
+
+.plus .line {
+    width: 17px;
+    height: 1px;
+    background-color: #42B6F8;
+}
+
+.plus .line1 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.plus .line2 {
+    position: absolute;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+
+.main__reviews-filter {
+    font-family: Tinos;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: #42B6F8;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.main__reviews-filter i {
+    font-size: 12px;
+}
+
+.star-rating {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    min-width: 96px;
+    white-space: nowrap;
+}
+
+.star-rating [type="radio"] {
+    appearance: none;
+}
+
+.star-rating i {
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.star-rating label:has(~ :checked) i {
+    color: #FF4C00;
+}
+
+.main__reviews-item {
+    width: 100%;
+    min-height: 90px;
+    margin-top: 12px;
+    margin-left: 8px;
+}
+
+.item-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.item-wrapper img {
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.main__reviews-info {
+    min-width: 220px;
+}
+
+.main__reviews-info h4 {
+    font-family: Tinos;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.main__reviews-info p {
+    font-family: Tinos;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #A9A9A9;
+}
+
+
+.main__reviews-review {
+    font-family: Tinos;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #000;
+    margin-top: 10px;
+}
+
+.main__reviews-review span {
+    color: #42B6F8;
+    cursor: pointer;
+}
+
+.reviews__modal {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(16px);
+    position: fixed;
+    inset: 0;
+    cursor: pointer;
+    padding: 30px;
+    display: flex;
+    overflow-y: auto;
+    z-index: 15;
+    width: 100%;
+}
+
+.reviews__modal-main {
+    width: 40%;
+    height: 360px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.08);
+    position: relative;
+    cursor: default;
+}
+
+.reviews__modal-title {
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #54595E;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 12px;
+}
+
+.reviews__modal-star-rating {
+    width: 176px;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+.reviews__modal-star-rating [type="radio"] {
+    appearance: none;
+}
+
+.reviews__modal-star-rating i {
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.reviews__modal-star-rating label:is(:hover, :has(~ :hover)) i {
+    color: #FF4C00;
+}
+
+.reviews__modal-star-rating label:has(~ :checked) i {
+    color: #FF4C00;
+}
+
+.reviews__modal-main form {
+    margin: 0 auto;
+    min-width: 90%;
+    max-width: 90%;
+    display: grid;
+    margin-top: 12px;
+}
+
+.reviews__modal-main form>input {
+    outline: none;
+    border: none;
+    border: 1px solid #ACACAC;
+    border-radius: 8px;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 56px 16px;
+    width: 100%;
+    min-height: 130px;
+    max-height: 280px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+.reviews__modal-main form>input::placeholder {
+    color: #ACACAC;
+}
+
+.reviews__modal-btns {
+    display: flex;
+    justify-self: self-end;
+}
+
+.reviews__modal-btns button {
+    width: 180px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border: 1px solid #4F4F4F;
+    border-radius: 8px;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #fff;
+    color: #4F4F4F;
+}
+
+.reviews__modal-btns button:last-child {
+    background-color: #2F70AF;
+    color: #F5F5F5;
+    margin-left: 16px;
+}
+
+.reviews__modal-close {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 53.2px;
+    height: 53.2px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    outline: 2px solid transparent;
+}
+
+.reviews__modal-close:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    transition: all 0.4s;
+}
+
+.reviews__modal-close:focus-visible {
+    outline-color: black;
+}
