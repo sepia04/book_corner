@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+    font-family: "Inter";
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    padding: 0  30px;
+}
+
+.header h1 {
+    font-family: "Irish Grover";
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.logo-cont {
+display: flex;
+text-align: center;
+}
+.logo-cont h1{
+    width: 220px;
+    height: 100px;
+
+    font-size: 40px;    
+}
+.search-container {
+    font-size: 100%;
+    position: relative;
+    width: 678px;
+    color: #FFFFFF;
+    height: 38px;
+    display: block;
+/*    margin: 0 auto;*/
+}
+
+.search-container img {
+    margin: 3px 14.84px auto;
+    position: absolute;
+}
+
+.search-container input {
+    font-size: 100%;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 17px;
+    color: #808080;
+/*    margin: 0 auto;*/
+    background-color: #373737;
+    width: 100%;
+    height: 33px;
+    padding-left: 80px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.icons-cont {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+}
+
+.btn  {
+    border: none;
+    outline: none;
+    width: 186px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3px 15px 2px 20px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    list-style: none;
+    font-family: "Times New Roman";
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* .search-container::placeholder {
+    width: 568px;
+} */
+
+.container {
+    width: 977px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 35px; */
+}
+
+.container nav {
+    width: 100%;
+/*    height: 50px;*/
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+}
+
+div nav ul {
+    list-style: none;
+/*    width: 142px;*/
+/*    border-right: 2px solid #D1D1D1;*/
+    font-size: 18px;
+    font-weight: 500;
+/*    gap: 20px;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+div nav ul li{
+/*    list-style: none;*/
+    width: 142px;
+    border-right: 2px solid #D1D1D1;
+    font-size: 18px;
+    font-weight: 500;
+/*    gap: 20px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div nav ul li:last-child{
+    border: none;
+}
+div nav ul li a {
+    text-align: center;
+    color: #111111;
+    text-decoration: none;
+}
+
+/* .nav_list {} */
+
+.center {
+    /* position: absolute; */
+    /* padding: 36px 40px 12px 40px; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 977px;
+    height: 694px;
+    padding: 82.5px 40px 0 40px;
+    margin-top: 300px;
+    margin-bottom: 500px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.12);
+    background: white;
+    border: 2px solid #DEE2E6;
+    border-radius: 10px;
+
+}
+
+.center h1 {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 32px;
+    color: #54595E;
+    margin-bottom: 16px;
+}
+
+.txt_field {
+    margin-bottom: 16px;
+}
+
+.txt_field p {
+    font-family: "Inter";
+    font-weight: 500;
+    color: #4F4F4F;
+    font-size: 12px;
+
+    margin-bottom: 10px;
+}
+
+.center form {
+    box-sizing: border-box;
+}
+
+.txt_field input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0 16px;
+    height: 44px;
+    font-size: 14px;
+    outline: none;
+}
+
+.user-agr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 12px;
+    color: #4F4F4F;
+    /* margin: ; */
+}
+
+.user-agr a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2F70AF;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 180px;
+    height: 44px;
+    margin: 14px auto 30px auto;
+    background-color: #2F70AF;
+    color: #F5F5F5;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+}
+
+.quest {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 12px;
+    color: #4F4F4F;
+    width: 190px;
+    margin: 0 auto;
+}
+
+.quest a{
+    color: #2F70AF;
+    text-decoration: none;
+}

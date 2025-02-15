@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Log In</title>
-    </head>
-    <body>
 
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/signup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-cont">
+        <img src="../images/logo.png" alt="" class="logo">
+        <h1>Book Corner</h1>
+    </div>
+    <form class="search-container">
+      <img src="../images/signup/icons/search.png">
+      <input type="text" id="search-bar"
+        placeholder="Search for the book you want and read it now... Sherlock Holmes, Harry Pot...">
+    </form>
+    <div class="icons-cont">
+     <a href="#"><img src="../images/signup/icons/fav.png"></a>
+     <a href=""><img src="../images/signup/icons/not.png"></a>
+     <a href=""><img src="../images/signup/icons/kor.png"></a>
+     <a class="btn" href=""><img src="../images/signup/icons/user.png">Account</a>
+    </div>
+  </header>
+  <div class="container">
+    <nav>
+      <ul class="header_list">
+        <li><a href="#">Домой</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Новинки</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Блог</a></li>
+      </ul>
+    </nav>
+    <div class="center">
+      <h1>Регистрация</h1>
+      <form method="post">
+        <div class="txt_field">
+          <p>Введите имя пользователя</p>
+          <input type="text" placeholder="ФИО" required>
+        </div>
+        <div class="txt_field">
+          <p>Придумайте логин</p>
+          <input type="text" placeholder="Логин" required>
+        </div>
+        <div class="txt_field">
+          <p>Придумайте пароль</p>
+          <input type="password" placeholder="Пароль" required>
+        </div>
+        <div class="txt_field">
+          <p>Введите пароль ещё раз</p>
+          <input type="password" placeholder="Пароль" required>
+        </div>
+        <div class="user-agr">
+          <p>Внимательно прочитайте пользовательское соглашение </p>
+          <a href="#">Пользовательское соглашение</a>
+          <input type="submit" value="Регистрация">
+        </div>
+      </form>
+        <div class="quest">
+          Есть вопросы?
+          <a href="#">Напишите нам</a>
+        </div>
+    </div>
+  </div>
+  
+</body>
+
 </html>
